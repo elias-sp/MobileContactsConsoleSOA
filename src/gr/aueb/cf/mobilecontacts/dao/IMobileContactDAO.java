@@ -5,6 +5,7 @@ import gr.aueb.cf.mobilecontacts.model.MobileContact;
 
 import java.util.List;
 
+// οι βασικές λειτουργίες του DAO
 public interface IMobileContactDAO {
     MobileContact insert(MobileContact mobileContact);
     MobileContact update(Long id, MobileContact mobileContact);
@@ -14,6 +15,7 @@ public interface IMobileContactDAO {
 
 // Long - long στις σημειωσεις
 
+    //ΤΑ QUERIES
     void deleteByphoneNumber(String phoneNumber);
 
     MobileContact getbyPhoneNumber(String phoneNumber);
